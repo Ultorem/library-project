@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/stylesheet.css">
+</head>
+
+<body>
+
+    <svg fill="none" onclick="lightSwitch()" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+    </svg>
+
+
+
+    <div class="bodyContainer">
+        <div id="pageTitle">
+            <h1>Libary</h1>
+        </div>
+        <div id="">
+            <div> <button id="addBookBtn" onclick="toggleAddBook()">Add book</button></div>
+        </div>
+        <div id="bookContainer"></div>
+        <div id="popUpContainer">
+            <span id="close"></span>
+            <div id="popUp">
+                <span onclick="closePopUp()">x</span>
+                <div id="popUpTitle">
+                    <h1>Add book</h1>
+                </div>
+                <div id="popUpForm">
+                    <form>
+                        <div class="formContainer">
+                            <label for="title">Book title</label>
+                            <input type="text" id="title" name="title" placeholder="Title">
+                        </div>
+                        <div class="formContainer">
+                            <label for="author">Book author</label>
+                            <input type="text" id="author" name="author" placeholder="Author">
+                        </div>
+                        <div class="formContainer">
+                            <label for="pages">Pages</label>
+                            <input type="number" id="pages" name="pages" placeholder="Pages">
+                        </div>
+                        <div class="formContainer">
+                            <label for="read">Read</label>
+                            <input type="checkbox" id="read" name="read" placeholder="Read">
+
+                        <div class="formContainer">
+                            <button type="submit" id="">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="scripts/script.js" async defer></script>
+</body>
+
+</html>
